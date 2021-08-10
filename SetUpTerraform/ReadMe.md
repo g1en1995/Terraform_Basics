@@ -1,3 +1,5 @@
+# Installation
+
 For Windows 32/64 bit systems
 
 1. Install terraform CLI from https://www.terraform.io/downloads.html
@@ -9,6 +11,19 @@ For Windows 32/64 bit systems
 
 
 
-# OverView
-
+# OverView 
+### Working with AWS as the provider.
+Terraform is written in a declarative configuration language known as HashiCorp Configuration Language, or optionally JSON with a .tf extension.
+1. We need to define a provider. List of providers are mentioned on the terraform website. -> https://registry.terraform.io/browse/providers
+    ```
+    provider "aws" {
+    region = "us-east-1"
+    }
+    ```
+2. Set up authentication. Provide Access Key Id and Secret access key from security credentials in AWS.
+  ```
+  access_key = "***************"
+  secret_key = "***************"
+  ```
+3. 
 
