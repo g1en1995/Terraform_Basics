@@ -47,7 +47,8 @@ For Windows 32/64 bit systems
    For example: if you wanted to add a tag to the EC2 instance that you have created. Just add    ``` tags = {Name = "HelloWorld"} ```   in the resource
                  section and the instance created earlier will have the tag added to the instance.
                  
-                 So finally the your main.tf looks like 
+  So finally the your main.tf looks like 
+                 
                  ```provider "aws" {
                     region = "us-east-1"
                     access_key = "################"
@@ -58,7 +59,7 @@ For Windows 32/64 bit systems
                     instance_type = "t2.micro"
 
                     tags = {Name = "HelloWorld"}
-                    }
+                    }```
 
 ### Destroy(Delete) a resource
 1. To delete the resouces just type in ``` terraform destroy ``` and the instances will get deleted.
