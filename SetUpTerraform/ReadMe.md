@@ -60,7 +60,7 @@ For Windows 32/64 bit systems
                     tags = {Name = "HelloWorld"}
                     }
 
-### Destroy(Delete) a resouce
+### Destroy(Delete) a resource
 1. To delete the resouces just type in ``` terraform destroy ``` and the instances will get deleted.
 2. Removing the resource section  and running a ```terraform apply ``` command also destroys all the instances since terraform plan is written in a declarative configuration language.
 
@@ -85,7 +85,7 @@ resource "aws_subnet" "subnet_1" {
   }
 }
 ```
-We can reference the vpc.id in subnet creation.
+We can reference the vpc.id in subnet creation using the name of vpc we have created.
 
 
 
